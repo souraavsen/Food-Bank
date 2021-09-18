@@ -1,0 +1,46 @@
+%btn {
+  font-family: $fn_merienda;
+  display: inline-block;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+
+.btn_circle {
+  @extend %btn;
+  border-radius: 50%;
+  color: $clr_white;
+  background-color: $clr_Saffron;
+}
+
+.btn_capsule {
+  @extend %btn;
+  padding: 1.5vh 3vh;
+  margin: auto;
+  text-align: center;
+  border-radius: 50px;
+  color: $clr_mid_black;
+  background-color: $clr_white;
+  transition: 0.3s ease-in-out;
+}
+
+.btn_capsule:hover{
+    @extend .btn_capsule;
+    color: $clr_white;
+    background-color: $clr_Saffron;
+    transition: 0.3s ease-in-out;
+  }
+
+.icon {
+  @extend .btn_circle;
+  padding: 3vh 4.5vh;
+  font-size: 3rem;
+  background-color: lighten($clr_Saffron, 5%);
+  transform:translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+.icon:hover {
+  background-color: $clr_Saffron;
+  transform:translateY(-20%);
+  transition:transform 0.3s ease-in-out;
+}

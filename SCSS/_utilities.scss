@@ -1,0 +1,43 @@
+.utility_container {
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+  background-color: $clr_white;
+  padding: 10vh 8vh;
+  margin: 10vh auto;
+  border-radius: 10px;
+}
+
+.flex-justifyc-itemc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-justifysb-itemc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: $clr_header;
+  font-family: $fn_poppins;
+  margin: 2vh auto 15vh auto;
+}
+
+li {
+  list-style: none;
+  line-height: 2.5rem;
+}
+
+a {
+  color: $clr_white;
+  text-decoration: none;
+  margin: auto;
+}
+
+.heighlight {
+  color: $clr_Saffron;
+}

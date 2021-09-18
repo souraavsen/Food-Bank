@@ -1,0 +1,121 @@
+@import "config";
+@import "utilities";
+@import "buttons";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $clr_Fade_white;
+  font-family: $fn_poppins;
+}
+
+
+.main_header {
+  width: 100%;
+  height: 10vh;
+  background-color: $clr_mid_black;
+  position: fixed;
+  top: 0;
+  font-family: $fn_merienda;
+  z-index: 999;
+
+  nav {
+    width: 70%;
+    margin: auto;
+    @extend .flex-justifysb-itemc;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+  li {
+    padding: 20px;
+  }
+
+  a:hover {
+    text-shadow: -0.1rem 0.1rem 0.5rem white;
+  }
+}
+
+.main_container {
+  min-height: 100vh;
+  margin-top: 2vh;
+  background-image: url(../images/header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $clr_Saffron;
+  @extend .flex-justifyc-itemc;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 23% 93%, 0 99%);
+
+  .title_container {
+    height: 35vh;
+    width: 60%;
+    background-color: $clr_Light_black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px double lighten($clr_Saffron, 10%);
+
+    h1 {
+      font-family: $fn_merienda;
+      font-size: 6rem;
+    }
+
+    p {
+      color: $clr_white;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.about_container {
+  .container {
+    @extend .flex-justifysb-itemc;
+
+
+    .text_container {
+      max-width: 50%;
+
+      h4 {
+        font-size: 2rem;
+        line-height: 6rem;
+      }
+
+      p {
+        line-height: 2.5rem;
+        color: $clr_black;
+      }
+    }
+
+    .image_container {
+      width: 60%;
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        z-index: 2;
+      }
+
+      .back_shade {
+        position: absolute;
+        transform: translate(-10%, 10%);
+        height: 45vh;
+        width: 45vh;
+        background-color: $clr_Saffron;
+      }
+    }
+  }
+
+  .icon_container {
+    margin-top: 5vh;
+    width: 50%;
+    @extend .flex-justifysb-itemc;
+  }
+}

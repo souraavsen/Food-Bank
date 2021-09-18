@@ -1,0 +1,194 @@
+/* 
+#FFDB58
+#FBB917 
+Saffron
+#6AFB92
+Dragon Green
+
+font-family: 'Merienda One', cursive;
+*/
+.utility_container {
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 10vh 8vh;
+  margin: 10vh auto;
+  border-radius: 10px;
+}
+
+.flex-justifyc-itemc, .food_menu, .food_order .offer_details, .food_order, .main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-justifysb-itemc, .about_container .icon_container, .about_container .container, .main_header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #2e2d2d;
+  font-family: "Poppins", sans-serif;
+  margin: 2vh auto 15vh auto;
+}
+
+li {
+  list-style: none;
+  line-height: 2.5rem;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: auto;
+}
+
+.heighlight {
+  color: #ffca46;
+}
+
+.btn_capsule, .btn_capsule:hover, .btn_circle, .food_footer .social_icons .s_icon, .icon {
+  font-family: "Merienda One", cursive;
+  display: inline-block;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+
+.btn_circle, .food_footer .social_icons .s_icon, .icon {
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #ffca46;
+}
+
+.btn_capsule, .btn_capsule:hover {
+  padding: 1.5vh 3vh;
+  margin: auto;
+  text-align: center;
+  border-radius: 50px;
+  color: #000000da;
+  background-color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+.btn_capsule:hover {
+  color: #ffffff;
+  background-color: #ffca46;
+  transition: 0.3s ease-in-out;
+}
+
+.icon {
+  padding: 3vh 4.5vh;
+  font-size: 3rem;
+  background-color: #ffd160;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+  background-color: #ffca46;
+  transform: translateY(-20%);
+  transition: transform 0.3s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fcfafaee;
+  font-family: "Poppins", sans-serif;
+}
+
+.main_header {
+  width: 100%;
+  height: 10vh;
+  background-color: #000000da;
+  position: fixed;
+  top: 0;
+  font-family: "Merienda One", cursive;
+  z-index: 999;
+}
+.main_header nav {
+  width: 70%;
+  margin: auto;
+}
+.main_header ul {
+  display: flex;
+  align-items: center;
+}
+.main_header li {
+  padding: 20px;
+}
+.main_header a:hover {
+  text-shadow: -0.1rem 0.1rem 0.5rem white;
+}
+
+.main_container {
+  min-height: 100vh;
+  margin-top: 2vh;
+  background-image: url(../images/header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffca46;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 23% 93%, 0 99%);
+}
+.main_container .title_container {
+  height: 35vh;
+  width: 60%;
+  background-color: #000000ad;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px double #ffd979;
+}
+.main_container .title_container h1 {
+  font-family: "Merienda One", cursive;
+  font-size: 6rem;
+}
+.main_container .title_container p {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.about_container .container .text_container {
+  max-width: 50%;
+}
+.about_container .container .text_container h4 {
+  font-size: 2rem;
+  line-height: 6rem;
+}
+.about_container .container .text_container p {
+  line-height: 2.5rem;
+  color: #000000;
+}
+.about_container .container .image_container {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+.about_container .container .image_container img {
+  z-index: 2;
+}
+.about_container .container .image_container .back_shade {
+  position: absolute;
+  transform: translate(-10%, 10%);
+  height: 45vh;
+  width: 45vh;
+  background-color: #ffca46;
+}
+.about_container .icon_container {
+  margin-top: 5vh;
+  width: 50%;
+}
+
+/* # sourceMappingURL=style.css.map */
