@@ -189,3 +189,53 @@ body {
     }
   }
 }
+
+.food_footer{
+  background-color: $clr_mid_black;
+  color: $clr_white;
+
+  .footer_details{
+    width: 80%;
+    margin: auto;
+    padding: 8vh 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10vh;
+  }
+
+  .social_icons{
+    display: flex;
+    justify-content:flex-start;
+    margin-top: 5vh;
+
+    .s_icon{
+      padding:1vh 3vh; 
+      margin-right: 50px;
+      @extend .btn_circle; 
+    }
+  }
+  .payment_list{
+    width: 50%;
+    margin-top: 2vh;
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .footer_highlight{
+    line-height: 4rem;
+    font-size: 1.2rem;
+    font-family: $fn_merienda;
+    font-weight: 400;
+  }
+
+  .footer_icon{
+    padding-right:10px;
+    line-height: 2.2rem;
+  }
+
+  .footer_text{
+    text-align: justify;
+    width: 90%;
+  }
+  
+}

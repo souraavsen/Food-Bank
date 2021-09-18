@@ -190,6 +190,7 @@ body {
   margin-top: 5vh;
   width: 50%;
 }
+
 .food_order {
   height: 70vh;
   background-image: url(../images/offer.png);
@@ -249,4 +250,46 @@ body {
   color: #f9b100;
 }
 
-/* # sourceMappingURL=style.css.map */
+.food_footer {
+  background-color: #000000da;
+  color: #ffffff;
+}
+.food_footer .footer_details {
+  width: 80%;
+  margin: auto;
+  padding: 8vh 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10vh;
+}
+.food_footer .social_icons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5vh;
+}
+.food_footer .social_icons .s_icon {
+  padding: 1vh 3vh;
+  margin-right: 50px;
+}
+.food_footer .payment_list {
+  width: 50%;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
+}
+.food_footer .footer_highlight {
+  line-height: 4rem;
+  font-size: 1.2rem;
+  font-family: "Merienda One", cursive;
+  font-weight: 400;
+}
+.food_footer .footer_icon {
+  padding-right: 10px;
+  line-height: 2.2rem;
+}
+.food_footer .footer_text {
+  text-align: justify;
+  width: 90%;
+}
+
+/*# sourceMappingURL=style.css.map */
