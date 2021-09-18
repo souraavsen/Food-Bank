@@ -119,3 +119,35 @@ body {
     @extend .flex-justifysb-itemc;
   }
 }
+
+.food_order {
+  height: 70vh;
+  background-image: url(../images/offer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10vh auto;
+  @extend .flex-justifyc-itemc;
+
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $clr_white;
+  }
+  p {
+    color: $clr_white;
+    margin-bottom: 6vh;
+  }
+
+  .offer_details {
+    @extend .flex-justifyc-itemc;
+    flex-direction: column;
+    z-index: 9;
+  }
+
+  .overlay {
+    position: absolute;
+    height: 70vh;
+    width: 100%;
+    background-color: adjust-color($clr_Light_black, $lightness: 5%);
+  }
+}

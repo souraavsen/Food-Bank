@@ -190,5 +190,31 @@ body {
   margin-top: 5vh;
   width: 50%;
 }
+.food_order {
+  height: 70vh;
+  background-image: url(../images/offer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10vh auto;
+}
+.food_order h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.food_order p {
+  color: #ffffff;
+  margin-bottom: 6vh;
+}
+.food_order .offer_details {
+  flex-direction: column;
+  z-index: 9;
+}
+.food_order .overlay {
+  position: absolute;
+  height: 70vh;
+  width: 100%;
+  background-color: rgba(13, 13, 13, 0.6784313725);
+}
 
 /* # sourceMappingURL=style.css.map */
