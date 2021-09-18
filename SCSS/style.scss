@@ -151,3 +151,41 @@ body {
     background-color: adjust-color($clr_Light_black, $lightness: 5%);
   }
 }
+
+.food_menu {
+  margin: auto;
+  height: 80vh;
+  width: 90%;
+  padding-bottom: 12vh;
+  @extend .flex-justifyc-itemc;
+  flex-direction: column;
+
+  .menus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10vh;
+  }
+
+  .shift_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    color: $clr_black;
+
+    h3{
+      font-size:2rem ;
+      font-weight: 400;
+      margin-bottom: 2vh;
+    }
+
+    span{
+      float: right;
+      padding-left: 2vh;
+    }
+
+    .menu_price{
+      color: darken($clr_Saffron,15%);
+    }
+  }
+}

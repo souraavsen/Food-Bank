@@ -217,4 +217,36 @@ body {
   background-color: rgba(13, 13, 13, 0.6784313725);
 }
 
+.food_menu {
+  margin: auto;
+  height: 80vh;
+  width: 90%;
+  padding-bottom: 12vh;
+  flex-direction: column;
+}
+.food_menu .menus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10vh;
+}
+.food_menu .shift_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #000000;
+}
+.food_menu .shift_menu h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2vh;
+}
+.food_menu .shift_menu span {
+  float: right;
+  padding-left: 2vh;
+}
+.food_menu .shift_menu .menu_price {
+  color: #f9b100;
+}
+
 /* # sourceMappingURL=style.css.map */
